@@ -9,7 +9,7 @@ features:
     always_online: false
   slash_commands:
     - command: /meeting
-      url: https://YOUR-VERCEL-DOMAIN.vercel.app/api/slack
+      url: https://kim-per-meeting-scheduler.vercel.app/api/slack
       description: Create and manage recurring meetings
       usage_hint: create | list | actions | history
       should_escape: false
@@ -23,7 +23,7 @@ oauth_config:
 settings:
   interactivity:
     is_enabled: true
-    request_url: https://YOUR-VERCEL-DOMAIN.vercel.app/api/slack
+    request_url: https://kim-per-meeting-scheduler.vercel.app/api/slack
   org_deploy_enabled: false
   socket_mode_enabled: false
   token_rotation_enabled: false
