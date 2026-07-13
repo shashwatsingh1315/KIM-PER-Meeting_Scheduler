@@ -1,0 +1,29 @@
+display_information:
+  name: KIM-PER Meeting Scheduler
+  description: Create recurring Slack meetings, reminders, Huddles and structured MoMs
+  background_color: "#2D2D2D"
+
+features:
+  bot_user:
+    display_name: KIM-PER Meeting Scheduler
+    always_online: false
+  slash_commands:
+    - command: /meeting
+      url: https://YOUR-VERCEL-DOMAIN.vercel.app/api/slack
+      description: Create and manage recurring meetings
+      usage_hint: create | list | actions | history
+      should_escape: false
+
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+
+settings:
+  interactivity:
+    is_enabled: true
+    request_url: https://YOUR-VERCEL-DOMAIN.vercel.app/api/slack
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
